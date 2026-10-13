@@ -216,11 +216,14 @@
          runs = list())
 }
 
-#' Major component of a semantic version string.
+#' Major component of a semantic version string, `NA` if it has none.
 #'
 #' @noRd
 .semver_major <- function(v) {
-    suppressWarnings(as.integer(sub("\\..*$", "", as.character(v)[1L])))
+    v <- as.character(v)[1L]
+    if (is.na(v) || !grepl("^[0-9]{1,9}(\\.|$)", v))
+        return(NA_integer_)
+    as.integer(sub("\\..*$", "", v))
 }
 
 #' Read an mzStack manifest.

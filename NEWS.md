@@ -1,3 +1,13 @@
+# MsBackendParquet 0.99.8
+
+## Changes
+
+- `mzR` moved from Imports to Suggests. It is needed only to read raw MS data files.
+
+- DuckDB and Arrow use at most two threads unless the `MsBackendParquet.threads` option is set.
+
+- Vignette and help pages expanded in response to Bioconductor review.
+
 # MsBackendParquet 0.99.7
 
 ## Bug fixes

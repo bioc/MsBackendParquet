@@ -37,9 +37,11 @@ to \code{MsBackendMzR()}.}
 processed per iteration.}
 
 \item{partitioning}{\code{character} with the names of the spectra
-variables to use as Hive partitioning columns. Use an empty
-vector (the default) to write a single un-partitioned set of
-files.}
+variables to use as Hive partitioning columns below each run
+(e.g. \code{"msLevel"}). Use an empty vector (the default) to write a
+single un-partitioned set of files per run. \code{"dataOrigin"} is
+redundant whenever each source file is already its own run, which
+is always the case for \code{x}, and is then dropped with a warning.}
 
 \item{compression}{\code{character(1)} with the Parquet compression codec
 to use. Defaults to \code{"snappy"}. See
