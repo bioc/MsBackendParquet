@@ -1,3 +1,7 @@
+# MsBackendParquet 0.99.9
+
+- Update authors list in DESCRIPTION
+
 # MsBackendParquet 0.99.8
 
 ## Changes

@@ -1,6 +1,6 @@
 Package: MsBackendParquet
 Title: Apache Parquet-based Mass Spectrometry Data Backend
-Version: 0.99.8
+Version: 0.99.9
 Authors@R: c(
     person(
         "Ossama",
@@ -14,6 +14,12 @@ Authors@R: c(
         role=c("aut"),
         email="r.j.weber@bham.ac.uk",
         comment = c(ORCID = "0000-0002-8796-4771")),
+    person(
+        "Johannes",
+        "Rainer",
+        role=c("ctb"),
+        email="Johannes.Rainer@eurac.edu",
+        comment = c(ORCID = "0000-0002-6977-7147")),
     person(
         "BioFAIR UK",
         role="fnd",
